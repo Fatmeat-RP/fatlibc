@@ -6,7 +6,7 @@
 /*   By: acarle-m <acarle-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/28 01:35:00 by acarle-m          #+#    #+#             */
-/*   Updated: 2022/01/05 00:08:52 by acarle-m         ###   ########.fr       */
+/*   Updated: 2022/02/22 16:15:05 by acarle-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include	<stdio.h>
 # include	<unistd.h>
 # include	<stdlib.h>
-# include	<limite.h>
+# include	<limits.h>
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 30

@@ -6,7 +6,7 @@
 /*   By: acarle-m <acarle-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 23:16:16 by acarle-m          #+#    #+#             */
-/*   Updated: 2022/01/05 00:08:17 by acarle-m         ###   ########.fr       */
+/*   Updated: 2022/02/22 16:17:41 by acarle-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ char	*get_next_line(int fd)
 	static char	*line[OPEN_MAX];
 	t_struct	st;
 
-	if (!line || ft_strchr(line[fd], '\n'))
+	if (!line[fd] || ft_strchr(line[fd], '\n'))
 		st.rd = read(fd, st.buf, BUFFER_SIZE);
 	if ((!st.rd && ft_strchr(line[fd], '\n') == NULL && !ft_strlen(line[fd], 2))
 		|| (st.rd == -1))
