@@ -86,7 +86,7 @@ static char	*ft_cleanlione(char *line)
 
 char	*get_next_line(int fd)
 {
-	static char	*line[OPEN_MAX];
+	static char	*line[FOPEN_MAX];
 	t_struct	st;
 
 	if (!line[fd] || ft_strchr(line[fd], '\n'))
